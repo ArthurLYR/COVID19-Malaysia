@@ -1,0 +1,200 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 800,
+    "height": 400,
+    "data": {
+        "url": "../data/cases_deaths_malaysia.csv"
+    },
+    "params": [
+        {
+            "name": "case_type_selection",
+            "bind": {
+                "input": "select",
+                "options": [
+                    null,
+                    "New Cases",
+                    "Recovered Cases",
+                    "New Deaths"
+                ],
+                "labels": [
+                    "Show All",
+                    "New Cases",
+                    "Recovered Cases",
+                    "New Deaths"
+                ],
+                "name": "Case Type: "
+            }
+        }
+    ],
+    "transform": [
+        {
+            "filter": "case_type_selection == null || datum.case_type == case_type_selection"
+        },
+        {
+            "timeUnit": "yearmonth",
+            "field": "date",
+            "as": "date"
+        }
+    ],
+    "encoding": {
+        "x": {
+            "field": "date",
+            "timeUnit": "yearmonth",
+            "type": "temporal",
+            "title": "Date"
+        }
+    },
+    "layer": [
+        {
+            "encoding": {
+                "color": {
+                    "field": "case_type",
+                    "type": "nominal",
+                    "title": "Case Type",
+                    "scale": {
+                        "domain": [
+                            "New Cases",
+                            "Recovered Cases",
+                            "New Deaths"
+                        ],
+                        "range": [
+                            "#f51d0a",
+                            "#02d614",
+                            "#313331"
+                        ]
+                    }
+                },
+                "y": {
+                    "field": "count",
+                    "aggregate": "sum",
+                    "type": "quantitative",
+                    "title": "Case Count"
+                }
+            },
+            "layer": [
+                {
+                    "mark": "line"
+                },
+                {
+                    "transform": [
+                        {
+                            "filter": {
+                                "param": "hover",
+                                "empty": false
+                            }
+                        }
+                    ],
+                    "mark": "point"
+                }
+            ]
+        },
+        {
+            "layer": [
+                {
+                    "mark": {
+                        "type": "rule",
+                        "strokeDash": [
+                            10,
+                            10
+                        ]
+                    },
+                    "encoding": {
+                        "x": {
+                            "datum": {
+                                "year": 2020,
+                                "month": "Sep"
+                            }
+                        },
+                        "color": {
+                            "value": "#a7a9ab"
+                        }
+                    }
+                },
+                {
+                    "mark": {
+                        "type": "text",
+                        "align": "right",
+                        "fontStyle": "italic",
+                        "dx": -10
+                    },
+                    "encoding": {
+                        "x": {
+                            "datum": {
+                                "year": 2020,
+                                "month": "Sep"
+                            }
+                        },
+                        "text": {
+                            "value": [
+                                "Sabah Elections",
+                                "allowed to be held"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "transform": [
+                {
+                    "pivot": "case_type",
+                    "value": "count",
+                    "groupby": [
+                        "date"
+                    ]
+                }
+            ],
+            "mark": "rule",
+            "encoding": {
+                "opacity": {
+                    "condition": {
+                        "value": 0.3,
+                        "param": "hover",
+                        "empty": false
+                    },
+                    "value": 0
+                },
+                "tooltip": [
+                    {
+                        "field": "date",
+                        "timeUnit": "yearmonth",
+                        "type": "temporal",
+                        "title": "Date"
+                    },
+                    {
+                        "field": "New Cases",
+                        "type": "quantitative",
+                        "formatType": "casesTooltip"
+                    },
+                    {
+                        "field": "Recovered Cases",
+                        "type": "quantitative",
+                        "formatType": "casesTooltip"
+                    },
+                    {
+                        "field": "New Deaths",
+                        "type": "quantitative",
+                        "formatType": "casesTooltip"
+                    }
+                ]
+            },
+            "params": [
+                {
+                    "name": "hover",
+                    "select": {
+                        "type": "point",
+                        "fields": [
+                            "date"
+                        ],
+                        "nearest": true,
+                        "on": "mouseover",
+                        "clear": "mouseout"
+                    }
+                }
+            ]
+        }
+    ],
+    "config": {
+        "customFormatTypes": true
+    }
+}
