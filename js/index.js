@@ -42,6 +42,6 @@ vegaEmbed('#stateCases', stateCases, { tooltip: tooltipOptions, "actions": false
 
 // Case Proportions Donut Chart
 var caseProportions = "./js/case_proportions.vg.json";
-vegaEmbed('#caseProportions', caseProportions, { tooltip: tooltipOptions, "actions": false }).then(function (result) {
+vegaEmbed('#caseProportions', caseProportions, { tooltip: tooltipOptions, "actions": true }).then(function (result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
 }).catch(console.error);

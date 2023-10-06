@@ -3,56 +3,12 @@
     "width": 800,
     "height": 400,
     "data": {
-        "url": "../data/cases_malaysia.csv"
+        "url": "../data/cases_proportion.csv"
     },
     "transform": [
         {
-            "lookup": "date",
-            "from": {
-                "data": {
-                    "url": "../data/deaths_malaysia.csv"
-                },
-                "key": "date",
-                "fields": [
-                    "deaths_new"
-                ]
-            }
-        },
-        {
             "filter": {
-                "field": "datum.date",
-                "lte": {
-                    "year": 2023,
-                    "month": "Sep",
-                    "date": 30
-                }
-            }
-        },
-        {
-            "aggregate": [
-                {
-                    "op": "sum",
-                    "field": "datum.cases_recovered",
-                    "as": "recovered"
-                }
-            ]
-        },
-        {
-            "aggregate": [
-                {
-                    "op": "sum",
-                    "field": "datum.deaths_new",
-                    "as": "deaths"
-                }
-            ]
-        },
-        {
-            "calculate": "datum.cases_active",
-            "as": "active"
-        },
-        {
-            "filter": {
-                "field": "datum.date",
+                "field": "date",
                 "equal": {
                     "year": 2023,
                     "month": "Sep",
@@ -61,35 +17,45 @@
             }
         }
     ],
-    "layer": [
-        {
-            "data": {
-                "values": [
-                    {
-                        "category": "Active",
-                        "value": "active"
-                    },
-                    {
-                        "category": "Recovered",
-                        "value": "recovered"
-                    },
-                    {
-                        "category": "Deaths",
-                        "value": "deaths"
-                    }
+    "encoding": {
+        "theta": {
+            "field": "count",
+            "type": "quantitative"
+        },
+        "color": {
+            "field": "case_type",
+            "type": "nominal",
+            "scale": {
+                "domain": [
+                    "Active",
+                    "Recovered",
+                    "Deaths"
+                ],
+                "range": [
+                    "#f51d0a",
+                    "#02d614",
+                    "#313331"
                 ]
             },
+            "legend": null
+        }
+    },
+    "layer": [
+        {
             "mark": {
                 "type": "arc",
-                "innerRadius": 50
+                "innerRadius": 50,
+                "outerRadius": 200
+            }
+        },
+        {
+            "mark": {
+                "type": "text",
+                "radius": 210
             },
             "encoding": {
-                "theta": {
-                    "field": "value",
-                    "type": "quantitative"
-                },
-                "color": {
-                    "field": "category",
+                "text": {
+                    "field": "case_type",
                     "type": "nominal"
                 }
             }
