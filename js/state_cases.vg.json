@@ -52,28 +52,25 @@
         },
         {
             "data": {
-                "url": "../data/malaysia_states.json",
-                "format": {
-                    "type": "topojson",
-                    "feature": "gadm41_MYS_1"
-                }
+                "url": "../data/cases_state.csv"
             },
             "transform": [
                 {
-                    "lookup": "properties.NAME_1",
+                    "lookup": "state",
                     "from": {
                         "data": {
-                            "url": "../data/cases_state.csv"
+                            "url": "../data/malaysia_states.json",
+                            "format": {
+                                "type": "topojson",
+                                "feature": "gadm41_MYS_1"
+                            }
                         },
-                        "key": "state",
-                        "fields": [
-                            "date",
-                            "cases_active"
-                        ]
-                    }
+                        "key": "properties.NAME_1"
+                    },
+                    "as": "geo"
                 },
                 {
-                    "lookup": "properties.NAME_1",
+                    "lookup": "state",
                     "from": {
                         "data": {
                             "url": "../data/population.csv"
@@ -82,6 +79,16 @@
                         "fields": [
                             "pop"
                         ]
+                    }
+                },
+                {
+                    "filter": {
+                        "field": "date",
+                        "equal": {
+                            "year": 2023,
+                            "month": "Sep",
+                            "date": 30
+                        }
                     }
                 },
                 {
@@ -95,6 +102,10 @@
                 "strokeWidth": 1
             },
             "encoding": {
+                "shape": {
+                    "field": "geo",
+                    "type": "geojson"
+                },
                 "color": {
                     "field": "cases_active_10000",
                     "type": "quantitative",
@@ -109,13 +120,13 @@
                 },
                 "tooltip": [
                     {
-                        "field": "properties.NAME_1",
+                        "field": "state",
                         "type": "nominal",
                         "title": "State"
                     },
                     {
                         "field": "date",
-                        "type": "ordinal",
+                        "type": "temporal",
                         "title": "Date"
                     },
                     {

@@ -28,7 +28,7 @@ let tooltipOptions = {
     },
 };
 
-// Country Cases over Time Area Chart
+// Country Cases over Time Line Chart
 var casesOverTime = "./js/cases_over_time.vg.json";
 vegaEmbed('#casesOverTime', casesOverTime, { tooltip: tooltipOptions, "actions": false }).then(function (result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
@@ -37,5 +37,11 @@ vegaEmbed('#casesOverTime', casesOverTime, { tooltip: tooltipOptions, "actions":
 // State Cases Map
 var stateCases = "./js/state_cases.vg.json";
 vegaEmbed('#stateCases', stateCases, { tooltip: tooltipOptions, "actions": false }).then(function (result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+}).catch(console.error);
+
+// Case Proportions Donut Chart
+var caseProportions = "./js/case_proportions.vg.json";
+vegaEmbed('#caseProportions', caseProportions, { tooltip: tooltipOptions, "actions": false }).then(function (result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
 }).catch(console.error);

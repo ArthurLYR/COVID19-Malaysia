@@ -1,0 +1,98 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 800,
+    "height": 400,
+    "data": {
+        "url": "../data/cases_malaysia.csv"
+    },
+    "transform": [
+        {
+            "lookup": "date",
+            "from": {
+                "data": {
+                    "url": "../data/deaths_malaysia.csv"
+                },
+                "key": "date",
+                "fields": [
+                    "deaths_new"
+                ]
+            }
+        },
+        {
+            "filter": {
+                "field": "datum.date",
+                "lte": {
+                    "year": 2023,
+                    "month": "Sep",
+                    "date": 30
+                }
+            }
+        },
+        {
+            "aggregate": [
+                {
+                    "op": "sum",
+                    "field": "datum.cases_recovered",
+                    "as": "recovered"
+                }
+            ]
+        },
+        {
+            "aggregate": [
+                {
+                    "op": "sum",
+                    "field": "datum.deaths_new",
+                    "as": "deaths"
+                }
+            ]
+        },
+        {
+            "calculate": "datum.cases_active",
+            "as": "active"
+        },
+        {
+            "filter": {
+                "field": "datum.date",
+                "equal": {
+                    "year": 2023,
+                    "month": "Sep",
+                    "date": 30
+                }
+            }
+        }
+    ],
+    "layer": [
+        {
+            "data": {
+                "values": [
+                    {
+                        "category": "Active",
+                        "value": "active"
+                    },
+                    {
+                        "category": "Recovered",
+                        "value": "recovered"
+                    },
+                    {
+                        "category": "Deaths",
+                        "value": "deaths"
+                    }
+                ]
+            },
+            "mark": {
+                "type": "arc",
+                "innerRadius": 50
+            },
+            "encoding": {
+                "theta": {
+                    "field": "value",
+                    "type": "quantitative"
+                },
+                "color": {
+                    "field": "category",
+                    "type": "nominal"
+                }
+            }
+        }
+    ]
+}
