@@ -63,7 +63,7 @@
                     "lookup": "properties.NAME_1",
                     "from": {
                         "data": {
-                            "url": "https://raw.githubusercontent.com/MoH-Malaysia/covid19-public/main/epidemic/cases_state.csv"
+                            "url": "../data/cases_state.csv"
                         },
                         "key": "state",
                         "fields": [
@@ -76,7 +76,7 @@
                     "lookup": "properties.NAME_1",
                     "from": {
                         "data": {
-                            "url": "https://raw.githubusercontent.com/MoH-Malaysia/covid19-public/main/static/population.csv"
+                            "url": "../data/population.csv"
                         },
                         "key": "state",
                         "fields": [

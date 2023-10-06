@@ -1,4 +1,4 @@
-date,case_type,count
+﻿date,case_type,count
 "Saturday, 25 January, 2020",New Cases,4
 "Saturday, 25 January, 2020",Recovered Cases,0
 "Saturday, 25 January, 2020",New Deaths,0
@@ -4013,3 +4013,24 @@ date,case_type,count
 "Saturday, 23 September, 2023",New Cases,87
 "Saturday, 23 September, 2023",Recovered Cases,89
 "Saturday, 23 September, 2023",New Deaths,0
+"Sunday, 24 September, 2023",New Cases,74
+"Sunday, 24 September, 2023",Recovered Cases,80
+"Sunday, 24 September, 2023",New Deaths,0
+"Monday, 25 September, 2023",New Cases,62
+"Monday, 25 September, 2023",Recovered Cases,52
+"Monday, 25 September, 2023",New Deaths,0
+"Tuesday, 26 September, 2023",New Cases,166
+"Tuesday, 26 September, 2023",Recovered Cases,98
+"Tuesday, 26 September, 2023",New Deaths,2
+"Wednesday, 27 September, 2023",New Cases,155
+"Wednesday, 27 September, 2023",Recovered Cases,128
+"Wednesday, 27 September, 2023",New Deaths,0
+"Thursday, 28 September, 2023",New Cases,130
+"Thursday, 28 September, 2023",Recovered Cases,130
+"Thursday, 28 September, 2023",New Deaths,0
+"Friday, 29 September, 2023",New Cases,99
+"Friday, 29 September, 2023",Recovered Cases,115
+"Friday, 29 September, 2023",New Deaths,1
+"Saturday, 30 September, 2023",New Cases,97
+"Saturday, 30 September, 2023",Recovered Cases,91
+"Saturday, 30 September, 2023",New Deaths,0
