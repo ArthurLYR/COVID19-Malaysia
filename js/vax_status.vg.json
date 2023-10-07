@@ -1,0 +1,63 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 800,
+    "height": 400,
+    "data": {
+        "url": "../data/vax_cumul_malaysia.csv"
+    },
+    "transform": [
+        {
+            "filter": {
+                "field": "date",
+                "equal": {
+                    "year": 2023,
+                    "month": "Sep",
+                    "date": 30
+                }
+            }
+        }
+    ],
+    "mark": "bar",
+    "encoding": {
+        "x": {
+            "field": "percentage",
+            "type": "quantitative",
+            "title": "Percentage Vaccinated",
+            "scale": {
+                "domain": [
+                    0,
+                    100
+                ]
+            }
+        },
+        "y": {
+            "field": "vax_type",
+            "type": "nominal",
+            "axis": {
+                "title": null
+            },
+            "sort": {
+                "order": null
+            }
+        },
+        "color": {
+            "field": "vax_type",
+            "type": "nominal",
+            "scale": {
+                "domain": [
+                    "Dose 1",
+                    "Dose 2",
+                    "Booster 1",
+                    "Booster 2"
+                ],
+                "range": [
+                    "#4292c6",
+                    "#2171b5",
+                    "#08519c",
+                    "#08306b"
+                ]
+            },
+            "legend": null
+        }
+    }
+}
