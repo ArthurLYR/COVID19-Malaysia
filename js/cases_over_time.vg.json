@@ -41,7 +41,13 @@
             "field": "date",
             "timeUnit": "yearmonth",
             "type": "temporal",
-            "title": "Date"
+            "title": "Date",
+            "axis": {
+                "grid": false,
+                "ticks": false,
+                "domain": false,
+                "title": null
+            }
         }
     },
     "layer": [
@@ -62,13 +68,19 @@
                             "#02d614",
                             "#313331"
                         ]
-                    }
+                    },
+                    "legend": null
                 },
                 "y": {
                     "field": "count",
                     "aggregate": "sum",
                     "type": "quantitative",
-                    "title": "Case Count"
+                    "title": "Case Count",
+                    "axis": {
+                        "domain": false,
+                        "ticks": false,
+                        "title": null
+                    }
                 }
             },
             "layer": [
@@ -195,6 +207,9 @@
         }
     ],
     "config": {
+        "view": {
+            "stroke": null
+        },
         "customFormatTypes": true
     }
 }
