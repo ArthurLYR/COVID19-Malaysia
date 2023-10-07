@@ -249,6 +249,7 @@
         }
     ],
     "config": {
+        "font": "Open Sans",
         "axis": {
             "disable": true
         },

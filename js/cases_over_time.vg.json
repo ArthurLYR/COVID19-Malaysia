@@ -483,6 +483,7 @@
         }
     ],
     "config": {
+        "font": "Open Sans",
         "view": {
             "stroke": null
         },
