@@ -9,6 +9,11 @@ vega.expressionFunction('casesTooltip', function (datum, params) {
     return formattedString;
 });
 
+// Defined Custom Format Type for percentages
+vega.expressionFunction('percentage', function (datum, params) {
+    return Math.round(datum) + "%";
+});
+
 // Make Attribute Values Bold in Tooltip
 let labels = [
     "Date",
@@ -16,7 +21,10 @@ let labels = [
     "Recovered Cases",
     "New Deaths",
     "State",
-    "Active Cases (per 10,000 population)"
+    "Active Cases (per 10,000 population)",
+    "Vaccination Type",
+    "Count",
+    "Percentage"
 ];
 let tooltipOptions = {
     sanitize: (value) => {
