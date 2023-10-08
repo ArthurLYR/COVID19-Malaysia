@@ -77,3 +77,7 @@ body * {
 .vega-bind {
     padding: 3px;
 }
+
+.vega-bind-name {
+    font-weight: bold;
+}
