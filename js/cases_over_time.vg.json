@@ -120,7 +120,9 @@
                     },
                     "encoding": {
                         "x": {
-                            "field": "date"
+                            "field": "date",
+                            "timeUnit": "yearmonthdate",
+                            "type": "temporal"
                         },
                         "color": {
                             "value": "#cccccc"
@@ -140,7 +142,9 @@
                     },
                     "encoding": {
                         "x": {
-                            "field": "date"
+                            "field": "date",
+                            "timeUnit": "yearmonthdate",
+                            "type": "temporal"
                         },
                         "text": {
                             "field": "annotation",
