@@ -73,3 +73,7 @@
 body * {
     font-family: 'Open Sans', sans-serif;
 }
+
+.vega-bind {
+    padding: 3px;
+}
