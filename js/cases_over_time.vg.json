@@ -108,248 +108,45 @@
                     ]
                 },
                 {
-                    "layer": [
-                        {
-                            "mark": {
-                                "type": "rule",
-                                "strokeDash": [
-                                    10,
-                                    10
-                                ]
-                            },
-                            "encoding": {
-                                "x": {
-                                    "datum": {
-                                        "year": 2020,
-                                        "month": "Sep",
-                                        "date": 26
-                                    }
-                                },
-                                "color": {
-                                    "value": "#cccccc"
-                                }
-                            }
+                    "data": {
+                        "url": "../data/cases_deaths_malaysia_labels.csv"
+                    },
+                    "mark": {
+                        "type": "rule",
+                        "strokeDash": [
+                            10,
+                            10
+                        ]
+                    },
+                    "encoding": {
+                        "x": {
+                            "field": "date"
                         },
-                        {
-                            "mark": {
-                                "type": "text",
-                                "align": "right",
-                                "fontStyle": "italic",
-                                "dx": -5
-                            },
-                            "encoding": {
-                                "x": {
-                                    "datum": {
-                                        "year": 2020,
-                                        "month": "Sep",
-                                        "date": 26
-                                    }
-                                },
-                                "text": {
-                                    "value": [
-                                        "Sabah Elections",
-                                        "allowed to be held"
-                                    ]
-                                }
-                            }
+                        "color": {
+                            "value": "#cccccc"
                         }
-                    ]
+                    }
                 },
                 {
-                    "layer": [
-                        {
-                            "mark": {
-                                "type": "rule",
-                                "strokeDash": [
-                                    10,
-                                    10
-                                ]
-                            },
-                            "encoding": {
-                                "x": {
-                                    "datum": {
-                                        "year": 2021,
-                                        "month": "Feb",
-                                        "date": 24
-                                    }
-                                },
-                                "color": {
-                                    "value": "#cccccc"
-                                }
-                            }
+                    "data": {
+                        "url": "../data/cases_deaths_malaysia_labels.csv"
+                    },
+                    "mark": {
+                        "type": "text",
+                        "lineBreak": "\\",
+                        "align": "right",
+                        "fontStyle": "italic",
+                        "dx": -5
+                    },
+                    "encoding": {
+                        "x": {
+                            "field": "date"
                         },
-                        {
-                            "mark": {
-                                "type": "text",
-                                "align": "right",
-                                "fontStyle": "italic",
-                                "dx": -5
-                            },
-                            "encoding": {
-                                "x": {
-                                    "datum": {
-                                        "year": 2021,
-                                        "month": "Feb",
-                                        "date": 24
-                                    }
-                                },
-                                "text": {
-                                    "value": [
-                                        "Vaccination",
-                                        "program",
-                                        "begins"
-                                    ]
-                                }
-                            }
+                        "text": {
+                            "field": "annotation",
+                            "type": "nominal"
                         }
-                    ]
-                },
-                {
-                    "layer": [
-                        {
-                            "mark": {
-                                "type": "rule",
-                                "strokeDash": [
-                                    10,
-                                    10
-                                ]
-                            },
-                            "encoding": {
-                                "x": {
-                                    "datum": {
-                                        "year": 2021,
-                                        "month": "Jun",
-                                        "date": 18
-                                    }
-                                },
-                                "color": {
-                                    "value": "#cccccc"
-                                }
-                            }
-                        },
-                        {
-                            "mark": {
-                                "type": "text",
-                                "align": "right",
-                                "fontStyle": "italic",
-                                "dx": -5
-                            },
-                            "encoding": {
-                                "x": {
-                                    "datum": {
-                                        "year": 2021,
-                                        "month": "Jun",
-                                        "date": 18
-                                    }
-                                },
-                                "text": {
-                                    "value": [
-                                        "Delta",
-                                        "wave",
-                                        "begins"
-                                    ]
-                                }
-                            }
-                        }
-                    ]
-                },
-                {
-                    "layer": [
-                        {
-                            "mark": {
-                                "type": "rule",
-                                "strokeDash": [
-                                    10,
-                                    10
-                                ]
-                            },
-                            "encoding": {
-                                "x": {
-                                    "datum": {
-                                        "year": 2021,
-                                        "month": "Dec",
-                                        "date": 2
-                                    }
-                                },
-                                "color": {
-                                    "value": "#cccccc"
-                                }
-                            }
-                        },
-                        {
-                            "mark": {
-                                "type": "text",
-                                "align": "right",
-                                "fontStyle": "italic",
-                                "dx": -5
-                            },
-                            "encoding": {
-                                "x": {
-                                    "datum": {
-                                        "year": 2021,
-                                        "month": "Dec",
-                                        "date": 2
-                                    }
-                                },
-                                "text": {
-                                    "value": [
-                                        "Omicron",
-                                        "wave",
-                                        "begins"
-                                    ]
-                                }
-                            }
-                        }
-                    ]
-                },
-                {
-                    "layer": [
-                        {
-                            "mark": {
-                                "type": "rule",
-                                "strokeDash": [
-                                    10,
-                                    10
-                                ]
-                            },
-                            "encoding": {
-                                "x": {
-                                    "datum": {
-                                        "year": 2023,
-                                        "month": "May",
-                                        "date": 5
-                                    }
-                                },
-                                "color": {
-                                    "value": "#cccccc"
-                                }
-                            }
-                        },
-                        {
-                            "mark": {
-                                "type": "text",
-                                "align": "right",
-                                "fontStyle": "italic",
-                                "dx": -5
-                            },
-                            "encoding": {
-                                "x": {
-                                    "datum": {
-                                        "year": 2023,
-                                        "month": "May",
-                                        "date": 5
-                                    }
-                                },
-                                "text": {
-                                    "value": [
-                                        "Pandemic",
-                                        "declared",
-                                        "over"
-                                    ]
-                                }
-                            }
-                        }
-                    ]
+                    }
                 },
                 {
                     "transform": [
