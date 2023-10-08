@@ -1,0 +1,35 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 800,
+    "height": 400,
+    "data": {
+        "url": "../data/vax_malaysia.csv"
+    },
+    "transform": [
+        {
+            "timeUnit": "yearmonth",
+            "field": "date",
+            "as": "date"
+        }
+    ],
+    "mark": "area",
+    "encoding": {
+        "x": {
+            "field": "date",
+            "timeUnit": "yearmonth",
+            "type": "temporal"
+        },
+        "y": {
+            "field": "count",
+            "aggregate": "sum",
+            "type": "quantitative"
+        },
+        "color": {
+            "field": "vax_type",
+            "type": "nominal",
+            "sort": {
+                "order": null
+            }
+        }
+    }
+}
