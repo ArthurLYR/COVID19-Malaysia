@@ -86,7 +86,8 @@
                             "axis": {
                                 "domain": false,
                                 "ticks": false,
-                                "title": null
+                                "title": null,
+                                "format": ".1s"
                             }
                         }
                     },
@@ -277,7 +278,8 @@
                     "axis": {
                         "domain": false,
                         "ticks": false,
-                        "title": null
+                        "title": null,
+                        "format": ".1s"
                     }
                 }
             }

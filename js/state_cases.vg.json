@@ -236,11 +236,15 @@
                     "type": "quantitative",
                     "title": [
                         "Active Cases",
-                        "(per 10,000 population)"
+                        "(per 10,000",
+                        "population)"
                     ],
                     "scale": {
                         "scheme": "reds",
                         "type": "log"
+                    },
+                    "legend": {
+                        "orient": "right"
                     }
                 },
                 "tooltip": [

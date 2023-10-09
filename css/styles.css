@@ -91,6 +91,16 @@ p {
     text-align: justify;
 }
 
+.vertical-center {
+    /* position: relative;
+    top: 33%; */
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
 .active-case {
     color: #f51d0a;
 }
@@ -167,8 +177,15 @@ canvas {
 }
 
 #stateCases {
-    height: 400px;
+    height: 300px;
     width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+    #stateCases {
+        height: 400px;
+        width: 100%;
+    }
 }
 
 #vaxStatus {
