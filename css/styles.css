@@ -91,6 +91,11 @@ p {
     text-align: justify;
 }
 
+img {
+    height: 100px;
+    padding: 0px 20px;
+}
+
 .vertical-center {
     /* position: relative;
     top: 33%; */
