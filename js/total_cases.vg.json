@@ -29,7 +29,7 @@
     ],
     "mark": {
         "type": "text",
-        "fontSize": 50
+        "fontSize": 60
     },
     "encoding": {
         "text": {
@@ -41,7 +41,7 @@
     "config": {
         "font": "Open Sans",
         "title": {
-            "fontSize": 24,
+            "fontSize": 28,
             "fontWeight": "normal"
         },
         "view": {

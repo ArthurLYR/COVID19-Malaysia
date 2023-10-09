@@ -70,8 +70,37 @@
     font-weight: lighter;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body * {
     font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 50px !important;
+}
+
+h2 {
+    font-size: 36px !important;
+}
+
+p {
+    font-size: 18px !important;
+    text-align: justify;
+}
+
+.active-case {
+    color: #f51d0a;
+}
+
+.recovered-case {
+    color: #02d614;
+}
+
+.death-case {
+    color: #313331;
 }
 
 .vega-bind {
@@ -79,7 +108,15 @@ body * {
 }
 
 .vega-bind-name {
+    padding: 0px 10px;
+    text-align: right;
     font-weight: bold;
+    display: inline-block;
+    width: 150px !important;
+}
+
+select {
+    width: 150px;
 }
 
 #totalCases {
@@ -89,17 +126,19 @@ body * {
 
 #totalRecovered {
     height: 100px;
-    width: 100%;
+    width: 300px;
+    text-align: left !important;
 }
 
 #recoveredWaffle {
     height: 300px;
     width: 300px;
+    text-align: left !important;
 }
 
 #totalActive {
     height: 100px;
-    width: 100%;
+    width: 300px;
 }
 
 #activeWaffle {
@@ -109,12 +148,14 @@ body * {
 
 #totalDeaths {
     height: 100px;
-    width: 100%;
+    width: 300px;
+    text-align: right !important;
 }
 
 #deathsWaffle {
     height: 300px;
     width: 300px;
+    text-align: right !important;
 }
 
 #casesOverTime {
