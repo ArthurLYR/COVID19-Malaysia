@@ -36,9 +36,27 @@ let tooltipOptions = {
     },
 };
 
-// Case Proportions Charts
-var caseProportions = "./js/case_proportions.vg.json";
-vegaEmbed('#caseProportions', caseProportions, { tooltip: tooltipOptions, "actions": false }).then(function (result) {
+// Total Cases Figure
+var totalCases = "./js/total_cases.vg.json";
+vegaEmbed('#totalCases', totalCases, { tooltip: tooltipOptions, "actions": false }).then(function (result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+}).catch(console.error);
+
+// Recovered Cases Figure
+var totalRecovered = "./js/total_recovered.vg.json";
+vegaEmbed('#totalRecovered', totalRecovered, { tooltip: tooltipOptions, "actions": false }).then(function (result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+}).catch(console.error);
+
+// Active Cases Figure
+var totalActive = "./js/total_active.vg.json";
+vegaEmbed('#totalActive', totalActive, { tooltip: tooltipOptions, "actions": false }).then(function (result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+}).catch(console.error);
+
+// Deaths Figure
+var totalDeaths = "./js/total_deaths.vg.json";
+vegaEmbed('#totalDeaths', totalDeaths, { tooltip: tooltipOptions, "actions": false }).then(function (result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
 }).catch(console.error);
 

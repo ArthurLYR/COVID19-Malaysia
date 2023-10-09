@@ -50,7 +50,10 @@
                         {
                             "height": 50,
                             "width": 200,
-                            "title": "Recovered",
+                            "title": {
+                                "text": "Recovered",
+                                "color": "#02d614"
+                            },
                             "transform": [
                                 {
                                     "filter": "datum.case_type == 'Recovered'"
@@ -120,7 +123,10 @@
                         {
                             "height": 50,
                             "width": 200,
-                            "title": "Active",
+                            "title": {
+                                "text": "Active",
+                                "color": "#f51d0a"
+                            },
                             "transform": [
                                 {
                                     "filter": "datum.case_type == 'Active'"
@@ -190,7 +196,10 @@
                         {
                             "height": 50,
                             "width": 200,
-                            "title": "Deaths",
+                            "title": {
+                                "text": "Deaths",
+                                "color": "#313331"
+                            },
                             "transform": [
                                 {
                                     "filter": "datum.case_type == 'Deaths'"

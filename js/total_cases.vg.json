@@ -1,0 +1,52 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+        "url": "../data/cases_proportion.csv"
+    },
+    "height": 70,
+    "width": 600,
+    "title": "Total Cases",
+    "transform": [
+        {
+            "filter": {
+                "field": "date",
+                "equal": {
+                    "year": 2023,
+                    "month": "Sep",
+                    "date": 30
+                }
+            }
+        },
+        {
+            "aggregate": [
+                {
+                    "op": "sum",
+                    "field": "count",
+                    "as": "total_cases"
+                }
+            ]
+        }
+    ],
+    "mark": {
+        "type": "text",
+        "fontSize": 50
+    },
+    "encoding": {
+        "text": {
+            "field": "total_cases",
+            "type": "quantitative",
+            "format": ","
+        }
+    },
+    "config": {
+        "font": "Open Sans",
+        "title": {
+            "fontSize": 24,
+            "fontWeight": "normal"
+        },
+        "view": {
+            "stroke": null
+        },
+        "customFormatTypes": true
+    }
+}
