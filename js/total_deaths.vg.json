@@ -1,5 +1,11 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "height": 50,
+    "width": 200,
+    "title": {
+        "text": "Deaths",
+        "color": "#313331"
+    },
     "data": {
         "url": "../data/cases_proportion.csv"
     },
@@ -13,79 +19,23 @@
                     "date": 30
                 }
             }
-        }
-    ],
-    "vconcat": [
-        {
-            "height": 50,
-            "width": 200,
-            "title": {
-                "text": "Deaths",
-                "color": "#313331"
-            },
-            "transform": [
-                {
-                    "filter": "datum.case_type == 'Deaths'"
-                }
-            ],
-            "mark": {
-                "type": "text",
-                "fontSize": 40,
-                "color": "#313331"
-            },
-            "encoding": {
-                "text": {
-                    "field": "count",
-                    "type": "quantitative",
-                    "format": ","
-                }
-            }
         },
         {
-            "data": {
-                "url": "../data/deaths_waffle.csv"
-            },
-            "height": 200,
-            "width": 200,
-            "mark": {
-                "type": "circle",
-                "filled": true,
-                "size": 200
-            },
-            "encoding": {
-                "x": {
-                    "field": "col",
-                    "type": "quantitative",
-                    "axis": null
-                },
-                "y": {
-                    "field": "row",
-                    "type": "quantitative",
-                    "axis": null,
-                    "sort": "-y"
-                },
-                "color": {
-                    "field": "case_type",
-                    "type": "nominal",
-                    "scale": {
-                        "domain": [
-                            "Active",
-                            "Recovered",
-                            "Deaths",
-                            "Others"
-                        ],
-                        "range": [
-                            "#f51d0a",
-                            "#02d614",
-                            "#313331",
-                            "#cccccc"
-                        ]
-                    },
-                    "legend": null
-                }
-            }
+            "filter": "datum.case_type == 'Deaths'"
         }
     ],
+    "mark": {
+        "type": "text",
+        "fontSize": 40,
+        "color": "#313331"
+    },
+    "encoding": {
+        "text": {
+            "field": "count",
+            "type": "quantitative",
+            "format": ","
+        }
+    },
     "config": {
         "font": "Open Sans",
         "title": {

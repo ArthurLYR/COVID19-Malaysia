@@ -1,0 +1,56 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+        "url": "../data/active_waffle.csv"
+    },
+    "height": 200,
+    "width": 200,
+    "mark": {
+        "type": "circle",
+        "filled": true,
+        "size": 200
+    },
+    "encoding": {
+        "x": {
+            "field": "col",
+            "type": "quantitative",
+            "axis": null
+        },
+        "y": {
+            "field": "row",
+            "type": "quantitative",
+            "axis": null,
+            "sort": "-y"
+        },
+        "color": {
+            "field": "case_type",
+            "type": "nominal",
+            "scale": {
+                "domain": [
+                    "Active",
+                    "Recovered",
+                    "Deaths",
+                    "Others"
+                ],
+                "range": [
+                    "#f51d0a",
+                    "#02d614",
+                    "#313331",
+                    "#cccccc"
+                ]
+            },
+            "legend": null
+        }
+    },
+    "config": {
+        "font": "Open Sans",
+        "title": {
+            "fontSize": 24,
+            "fontWeight": "normal"
+        },
+        "view": {
+            "stroke": null
+        },
+        "customFormatTypes": true
+    }
+}

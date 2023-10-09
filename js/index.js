@@ -48,15 +48,33 @@ vegaEmbed('#totalRecovered', totalRecovered, { tooltip: tooltipOptions, "actions
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
 }).catch(console.error);
 
+// Recovered Waffle Chart
+var recoveredWaffle = "./js/recovered_waffle.vg.json";
+vegaEmbed('#recoveredWaffle', recoveredWaffle, { tooltip: tooltipOptions, "actions": false }).then(function (result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+}).catch(console.error);
+
 // Active Cases Figure
 var totalActive = "./js/total_active.vg.json";
 vegaEmbed('#totalActive', totalActive, { tooltip: tooltipOptions, "actions": false }).then(function (result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
 }).catch(console.error);
 
+// Active Waffle Chart
+var activeWaffle = "./js/active_waffle.vg.json";
+vegaEmbed('#activeWaffle', activeWaffle, { tooltip: tooltipOptions, "actions": false }).then(function (result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+}).catch(console.error);
+
 // Deaths Figure
 var totalDeaths = "./js/total_deaths.vg.json";
 vegaEmbed('#totalDeaths', totalDeaths, { tooltip: tooltipOptions, "actions": false }).then(function (result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+}).catch(console.error);
+
+// Deaths Waffle Chart
+var deathsWaffle = "./js/deaths_waffle.vg.json";
+vegaEmbed('#deathsWaffle', deathsWaffle, { tooltip: tooltipOptions, "actions": false }).then(function (result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
 }).catch(console.error);
 
