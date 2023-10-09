@@ -3,8 +3,8 @@
     "data": {
         "url": "../data/cases_proportion.csv"
     },
-    "height": 70,
-    "width": 600,
+    "height": "container",
+    "width": "container",
     "title": "Total Cases",
     "transform": [
         {

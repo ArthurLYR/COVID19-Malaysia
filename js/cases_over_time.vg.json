@@ -26,7 +26,7 @@
     ],
     "vconcat": [
         {
-            "width": 800,
+            "width": "container",
             "height": 400,
             "transform": [
                 {
@@ -214,7 +214,7 @@
             ]
         },
         {
-            "width": 800,
+            "width": "container",
             "height": 100,
             "mark": "area",
             "params": [

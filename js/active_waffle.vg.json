@@ -1,14 +1,14 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "height": "container",
+    "width": "container",
     "data": {
         "url": "../data/active_waffle.csv"
     },
-    "height": 200,
-    "width": 200,
     "mark": {
         "type": "circle",
         "filled": true,
-        "size": 200
+        "size": 400
     },
     "encoding": {
         "x": {

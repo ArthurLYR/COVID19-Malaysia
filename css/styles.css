@@ -81,3 +81,53 @@ body * {
 .vega-bind-name {
     font-weight: bold;
 }
+
+#totalCases {
+    height: 100px;
+    width: 100%;
+}
+
+#totalRecovered {
+    height: 100px;
+    width: 100%;
+}
+
+#recoveredWaffle {
+    height: 300px;
+    width: 300px;
+}
+
+#totalActive {
+    height: 100px;
+    width: 100%;
+}
+
+#activeWaffle {
+    height: 300px;
+    width: 300px;
+}
+
+#totalDeaths {
+    height: 100px;
+    width: 100%;
+}
+
+#deathsWaffle {
+    height: 300px;
+    width: 300px;
+}
+
+#casesOverTime {
+    height: 400px;
+    width: 100%;
+}
+
+#stateCases {
+    height: 400px;
+    width: 100%;
+}
+
+#vaxStatus {
+    height: 200px;
+    width: 100%;
+}

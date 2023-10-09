@@ -3,12 +3,12 @@
     "data": {
         "url": "../data/recovered_waffle.csv"
     },
-    "height": 200,
-    "width": 200,
+    "height": "container",
+    "width": "container",
     "mark": {
         "type": "circle",
         "filled": true,
-        "size": 200
+        "size": 400
     },
     "encoding": {
         "x": {

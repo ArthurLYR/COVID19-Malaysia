@@ -3,8 +3,8 @@
     "data": {
         "url": "../data/cases_proportion.csv"
     },
-    "height": 50,
-    "width": 200,
+    "height": "container",
+    "width": "container",
     "title": {
         "text": "Recovered",
         "color": "#02d614"
