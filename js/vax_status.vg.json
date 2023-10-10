@@ -3,7 +3,7 @@
     "width": "container",
     "height": "container",
     "data": {
-        "url": "../data/vax_cumul_malaysia.csv"
+        "url": "https://raw.githubusercontent.com/ArthurLYR/COVID19-Malaysia/main/data/vax_cumul_malaysia.csv"
     },
     "transform": [
         {

@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "data": {
-        "url": "../data/cases_deaths_malaysia.csv"
+        "url": "https://raw.githubusercontent.com/ArthurLYR/COVID19-Malaysia/main/data/cases_deaths_malaysia.csv"
     },
     "params": [
         {

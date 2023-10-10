@@ -7,7 +7,7 @@
         "color": "#333333"
     },
     "data": {
-        "url": "../data/cases_proportion.csv"
+        "url": "https://raw.githubusercontent.com/ArthurLYR/COVID19-Malaysia/main/data/cases_proportion.csv"
     },
     "transform": [
         {

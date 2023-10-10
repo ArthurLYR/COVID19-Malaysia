@@ -3,7 +3,7 @@
     "height": "container",
     "width": "container",
     "data": {
-        "url": "../data/deaths_waffle.csv"
+        "url": "https://raw.githubusercontent.com/ArthurLYR/COVID19-Malaysia/main/data/deaths_waffle.csv"
     },
     "mark": {
         "type": "circle",
