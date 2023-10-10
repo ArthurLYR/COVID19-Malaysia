@@ -113,23 +113,16 @@ p {
     text-align: justify;
 }
 
-.date {
-    font-size: 24px !important;
-}
-
 .active-case {
     color: #ff4528;
-    font-size: 24px !important;
 }
 
 .recovered-case {
     color: #96c485;
-    font-size: 24px !important;
 }
 
 .death-case {
     color: #333333;
-    font-size: 24px !important;
 }
 
 .state-text {
