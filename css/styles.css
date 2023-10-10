@@ -113,31 +113,39 @@ p {
     text-align: justify;
 }
 
-img {
-    height: 75px;
-    padding: 0px 20px;
+.date {
+    font-size: 24px !important;
 }
 
-.vertical-center {
-    /* position: relative;
-    top: 33%; */
+.active-case {
+    color: #ff4528;
+    font-size: 24px !important;
+}
+
+.recovered-case {
+    color: #96c485;
+    font-size: 24px !important;
+}
+
+.death-case {
+    color: #333333;
+    font-size: 24px !important;
+}
+
+.state-text {
+    margin: 0;
+    position: relative;
+    top: 40%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.vax-text {
     margin: 0;
     position: relative;
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-}
-
-.active-case {
-    color: #ff4528;
-}
-
-.recovered-case {
-    color: #96c485;
-}
-
-.death-case {
-    color: #333333;
 }
 
 .vega-bind {
