@@ -19,61 +19,6 @@
     ],
     "layer": [
         {
-            "data": {
-                "values": [
-                    {
-                        "vax_type": "Dose 1",
-                        "percentage": 100
-                    },
-                    {
-                        "vax_type": "Dose 2",
-                        "percentage": 100
-                    },
-                    {
-                        "vax_type": "Booster 1",
-                        "percentage": 100
-                    },
-                    {
-                        "vax_type": "Booster 2",
-                        "percentage": 100
-                    }
-                ]
-            },
-            "mark": {
-                "type": "bar",
-                "size": 1,
-                "cornerRadius": 50
-            },
-            "encoding": {
-                "x": {
-                    "field": "percentage",
-                    "type": "quantitative",
-                    "title": "Percentage Vaccinated",
-                    "scale": {
-                        "domain": [
-                            0,
-                            100
-                        ]
-                    }
-                },
-                "y": {
-                    "field": "vax_type",
-                    "type": "nominal",
-                    "axis": {
-                        "ticks": false,
-                        "domain": false,
-                        "title": null
-                    },
-                    "sort": {
-                        "order": null
-                    }
-                },
-                "color": {
-                    "value": "#cccccc"
-                }
-            }
-        },
-        {
             "encoding": {
                 "x": {
                     "field": "percentage",
@@ -154,7 +99,8 @@
                 {
                     "mark": {
                         "type": "text",
-                        "fontSize": 20,
+                        "font": "Garamond",
+                        "fontSize": 24,
                         "align": "left",
                         "baseline": "middle",
                         "dx": 20
@@ -195,7 +141,8 @@
                         "ticks": false,
                         "domain": false,
                         "title": null,
-                        "labelFontSize": 20,
+                        "labelFontSize": 24,
+                        "labelFont": "Garamond",
                         "labelPadding": 20
                     },
                     "sort": {
