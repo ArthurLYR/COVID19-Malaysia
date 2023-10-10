@@ -7,7 +7,7 @@
     "width": "container",
     "title": {
         "text": "Recovered",
-        "color": "#02d614"
+        "color": "#96c485"
     },
     "transform": [
         {
@@ -27,7 +27,7 @@
     "mark": {
         "type": "text",
         "fontSize": 40,
-        "color": "#02d614"
+        "color": "#96c485"
     },
     "encoding": {
         "text": {

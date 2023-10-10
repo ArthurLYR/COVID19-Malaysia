@@ -27,15 +27,11 @@
             "type": "nominal",
             "scale": {
                 "domain": [
-                    "Active",
-                    "Recovered",
                     "Deaths",
                     "Others"
                 ],
                 "range": [
-                    "#f51d0a",
-                    "#02d614",
-                    "#313331",
+                    "#333333",
                     "#cccccc"
                 ]
             },

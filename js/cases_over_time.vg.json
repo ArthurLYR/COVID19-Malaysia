@@ -71,9 +71,9 @@
                                     "New Deaths"
                                 ],
                                 "range": [
-                                    "#f51d0a",
-                                    "#02d614",
-                                    "#313331"
+                                    "#ff4528",
+                                    "#96c485",
+                                    "#333333"
                                 ]
                             },
                             "legend": null
@@ -217,7 +217,11 @@
         {
             "width": "container",
             "height": 100,
-            "mark": "area",
+            "mark": {
+                "type": "area",
+                "stroke": "#f0f0f0",
+                "strokeWidth": 1
+            },
             "params": [
                 {
                     "name": "brush",
@@ -263,9 +267,9 @@
                             "New Deaths"
                         ],
                         "range": [
-                            "#f51d0a",
-                            "#02d614",
-                            "#313331"
+                            "#ff4528",
+                            "#96c485",
+                            "#333333"
                         ]
                     },
                     "legend": null

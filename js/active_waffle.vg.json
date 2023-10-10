@@ -28,14 +28,10 @@
             "scale": {
                 "domain": [
                     "Active",
-                    "Recovered",
-                    "Deaths",
                     "Others"
                 ],
                 "range": [
-                    "#f51d0a",
-                    "#02d614",
-                    "#313331",
+                    "#ff4528",
                     "#cccccc"
                 ]
             },

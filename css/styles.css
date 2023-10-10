@@ -124,15 +124,15 @@ img {
 }
 
 .active-case {
-    color: #f51d0a;
+    color: #ff4528;
 }
 
 .recovered-case {
-    color: #02d614;
+    color: #96c485;
 }
 
 .death-case {
-    color: #313331;
+    color: #333333;
 }
 
 .vega-bind {

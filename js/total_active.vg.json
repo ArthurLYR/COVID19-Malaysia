@@ -4,7 +4,7 @@
     "width": "container",
     "title": {
         "text": "Active",
-        "color": "#f51d0a"
+        "color": "#ff4528"
     },
     "data": {
         "url": "../data/cases_proportion.csv"
@@ -27,7 +27,7 @@
     "mark": {
         "type": "text",
         "fontSize": 40,
-        "color": "#f51d0a"
+        "color": "#ff4528"
     },
     "encoding": {
         "text": {

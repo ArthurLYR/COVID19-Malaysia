@@ -4,7 +4,7 @@
     "width": "container",
     "title": {
         "text": "Deaths",
-        "color": "#313331"
+        "color": "#333333"
     },
     "data": {
         "url": "../data/cases_proportion.csv"
@@ -27,7 +27,7 @@
     "mark": {
         "type": "text",
         "fontSize": 40,
-        "color": "#313331"
+        "color": "#333333"
     },
     "encoding": {
         "text": {
