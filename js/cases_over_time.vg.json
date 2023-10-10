@@ -110,7 +110,7 @@
                 },
                 {
                     "data": {
-                        "url": "../data/cases_deaths_malaysia_labels.csv"
+                        "url": "https://raw.githubusercontent.com/ArthurLYR/COVID19-Malaysia/main/data/cases_deaths_malaysia_labels.csv"
                     },
                     "mark": {
                         "type": "rule",
@@ -132,7 +132,7 @@
                 },
                 {
                     "data": {
-                        "url": "../data/cases_deaths_malaysia_labels.csv"
+                        "url": "https://raw.githubusercontent.com/ArthurLYR/COVID19-Malaysia/main/data/cases_deaths_malaysia_labels.csv"
                     },
                     "mark": {
                         "type": "text",
