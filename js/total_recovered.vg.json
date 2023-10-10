@@ -37,6 +37,7 @@
         }
     },
     "config": {
+        "background": "transparent",
         "font": "Open Sans",
         "title": {
             "fontSize": 24,

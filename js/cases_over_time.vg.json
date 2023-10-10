@@ -286,6 +286,7 @@
         }
     ],
     "config": {
+        "background": "transparent",
         "font": "Open Sans",
         "view": {
             "stroke": null

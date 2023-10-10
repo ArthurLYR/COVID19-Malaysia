@@ -249,6 +249,7 @@
         }
     ],
     "config": {
+        "background": "transparent",
         "font": "Open Sans",
         "axis": {
             "disable": true
