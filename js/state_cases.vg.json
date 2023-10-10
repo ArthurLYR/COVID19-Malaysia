@@ -183,6 +183,19 @@
             }
         },
         {
+            "params": [
+                {
+                    "name": "highlight",
+                    "select": {
+                        "type": "point",
+                        "on": "mouseover"
+                    }
+                },
+                {
+                    "name": "select",
+                    "select": "point"
+                }
+            ],
             "data": {
                 "url": "../data/cases_state.csv"
             },
@@ -223,6 +236,7 @@
             ],
             "mark": {
                 "type": "geoshape",
+                "cursor": "pointer",
                 "stroke": "#f0f0f0",
                 "strokeWidth": 1
             },
@@ -264,7 +278,29 @@
                         "title": "Active Cases (per 10,000 population)",
                         "format": ".2f"
                     }
-                ]
+                ],
+                "fillOpacity": {
+                    "condition": {
+                        "param": "select",
+                        "value": 1
+                    },
+                    "value": 0.1
+                },
+                "strokeWidth": {
+                    "condition": [
+                        {
+                            "param": "select",
+                            "empty": false,
+                            "value": 1
+                        },
+                        {
+                            "param": "highlight",
+                            "empty": false,
+                            "value": 3
+                        }
+                    ],
+                    "value": 1
+                }
             }
         }
     ],
