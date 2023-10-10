@@ -5,7 +5,10 @@
     },
     "height": "container",
     "width": "container",
-    "title": "Total Cases",
+    "title": {
+        "text": "Total Cases",
+        "font": "Garamond"
+    },
     "transform": [
         {
             "filter": {
@@ -29,7 +32,8 @@
     ],
     "mark": {
         "type": "text",
-        "fontSize": 60
+        "fontSize": 65,
+        "fontWeight": "normal"
     },
     "encoding": {
         "text": {
@@ -40,7 +44,7 @@
     },
     "config": {
         "background": "transparent",
-        "font": "Open Sans",
+        "font": "Garamond",
         "title": {
             "fontSize": 28,
             "fontWeight": "normal"

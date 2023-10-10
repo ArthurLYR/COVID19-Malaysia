@@ -78,12 +78,29 @@ body * {
     font-family: 'Open Sans', sans-serif;
 }
 
+.viz-header {
+    background-color: #333333;
+    height: 150px;
+    margin-bottom: 15px;
+}
+
 h1 {
-    font-size: 50px !important;
+    height: 80px;
+    padding-top: 35px;
+    font-size: 65px !important;
+    font-family: 'Garamond', serif;
+    color: #ffffff !important;
+    margin: 0 !important;
 }
 
 h2 {
-    font-size: 36px !important;
+    font-size: 55px !important;
+    font-family: 'Garamond', serif;
+}
+
+h3 {
+    font-size: 28px !important;
+    font-family: 'Garamond', serif;
 }
 
 p {
@@ -144,7 +161,7 @@ canvas {
 }
 
 #totalRecovered {
-    height: 100px;
+    height: 70px;
     width: 300px;
     text-align: left !important;
 }
@@ -156,7 +173,7 @@ canvas {
 }
 
 #totalActive {
-    height: 100px;
+    height: 70px;
     width: 300px;
 }
 
@@ -166,7 +183,7 @@ canvas {
 }
 
 #totalDeaths {
-    height: 100px;
+    height: 70px;
     width: 300px;
     text-align: right !important;
 }
