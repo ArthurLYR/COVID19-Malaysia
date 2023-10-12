@@ -140,7 +140,7 @@ a {
 }
 
 .recovered-case {
-    color: #96c485;
+    color: #4292c6;
 }
 
 .death-case {
@@ -233,7 +233,7 @@ canvas {
 
 @media screen and (min-width: 1200px) {
     #stateCases {
-        height: 400px;
+        height: 500px;
         width: 100%;
     }
 }
