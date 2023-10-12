@@ -21,6 +21,8 @@ let labels = [
     "Recovered Cases",
     "New Deaths",
     "State",
+    "Population",
+    "Active Cases (raw)",
     "Active Cases (per 10,000 population)",
     "Vaccination Type",
     "Count",
