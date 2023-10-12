@@ -100,7 +100,7 @@
                     "mark": {
                         "type": "text",
                         "font": "Garamond",
-                        "fontSize": 24,
+                        "fontSize": 28,
                         "align": "left",
                         "baseline": "middle",
                         "dx": 20
@@ -141,7 +141,7 @@
                         "ticks": false,
                         "domain": false,
                         "title": null,
-                        "labelFontSize": 24,
+                        "labelFontSize": 28,
                         "labelFont": "Garamond",
                         "labelPadding": 20
                     },
