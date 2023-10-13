@@ -3,18 +3,141 @@
     "width": "container",
     "height": "container",
     "data": {
-        "url": "https://raw.githubusercontent.com/ArthurLYR/COVID19-Malaysia/main/data/vax_cumul_malaysia.csv"
+        "url": "../data/vax_cumul_malaysia.csv"
     },
+    "params": [
+        {
+            "name": "date_selection",
+            "value": 5,
+            "bind": {
+                "input": "select",
+                "options": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31
+                ],
+                "labels": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                    "6",
+                    "7",
+                    "8",
+                    "9",
+                    "10",
+                    "11",
+                    "12",
+                    "13",
+                    "14",
+                    "15",
+                    "16",
+                    "17",
+                    "18",
+                    "19",
+                    "20",
+                    "21",
+                    "22",
+                    "23",
+                    "24",
+                    "25",
+                    "26",
+                    "27",
+                    "28",
+                    "29",
+                    "30",
+                    "31"
+                ],
+                "name": "Date: "
+            }
+        },
+        {
+            "name": "month_selection",
+            "value": 10,
+            "bind": {
+                "input": "select",
+                "options": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12
+                ],
+                "labels": [
+                    "January",
+                    "February",
+                    "March",
+                    "April",
+                    "May",
+                    "June",
+                    "July",
+                    "August",
+                    "September",
+                    "October",
+                    "November",
+                    "December"
+                ],
+                "name": "Month: "
+            }
+        },
+        {
+            "name": "year_selection",
+            "value": 2023,
+            "bind": {
+                "input": "select",
+                "options": [
+                    2021,
+                    2022,
+                    2023
+                ],
+                "labels": [
+                    "2021",
+                    "2022",
+                    "2023"
+                ],
+                "name": "Year: "
+            }
+        }
+    ],
     "transform": [
         {
-            "filter": {
-                "field": "date",
-                "equal": {
-                    "year": 2023,
-                    "month": "Oct",
-                    "date": 5
-                }
-            }
+            "filter": "datum.date == date_selection && datum.month == month_selection && datum.year == year_selection"
         }
     ],
     "layer": [
@@ -64,7 +187,7 @@
                 },
                 "tooltip": [
                     {
-                        "field": "date",
+                        "field": "date_full",
                         "type": "temporal",
                         "title": "Date"
                     },
@@ -170,7 +293,7 @@
                 },
                 "tooltip": [
                     {
-                        "field": "date",
+                        "field": "date_full",
                         "type": "temporal",
                         "title": "Date"
                     },
