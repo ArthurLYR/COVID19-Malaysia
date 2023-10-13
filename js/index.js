@@ -25,8 +25,8 @@ let labels = [
     "Active Cases (raw)",
     "Active Cases (per 10,000 population)",
     "Vaccination Type",
-    "Count",
-    "Percentage"
+    "Number Received",
+    "Percentage of Population"
 ];
 let tooltipOptions = {
     sanitize: (value) => {

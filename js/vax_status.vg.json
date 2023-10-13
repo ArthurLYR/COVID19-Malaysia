@@ -76,13 +76,13 @@
                     {
                         "field": "count",
                         "type": "quantitative",
-                        "title": "Count",
+                        "title": "Number Received",
                         "format": ","
                     },
                     {
                         "field": "percentage",
                         "type": "quantitative",
-                        "title": "Percentage",
+                        "title": "Percentage of Population",
                         "formatType": "percentage"
                     }
                 ]
@@ -182,13 +182,13 @@
                     {
                         "field": "count",
                         "type": "quantitative",
-                        "title": "Count",
+                        "title": "Number Received",
                         "format": ","
                     },
                     {
                         "field": "percentage",
                         "type": "quantitative",
-                        "title": "Percentage",
+                        "title": "Percentage of Population",
                         "formatType": "percentage"
                     }
                 ]
