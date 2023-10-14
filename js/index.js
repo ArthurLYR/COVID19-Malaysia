@@ -97,3 +97,9 @@ var vaxStatus = "./js/vax_status.vg.json";
 vegaEmbed('#vaxStatus', vaxStatus, { tooltip: tooltipOptions, "actions": false }).then(function (result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
 }).catch(console.error);
+
+// Vaccination Brand Comparison
+var vaxBrands = "./js/vax_brands.vg.json";
+vegaEmbed('#vaxBrands', vaxBrands, { tooltip: tooltipOptions, "actions": false }).then(function (result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+}).catch(console.error);

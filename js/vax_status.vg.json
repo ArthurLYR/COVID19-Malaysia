@@ -222,8 +222,7 @@
                 {
                     "mark": {
                         "type": "text",
-                        "font": "Garamond",
-                        "fontSize": 28,
+                        "fontSize": 24,
                         "align": "left",
                         "baseline": "middle",
                         "dx": 20
@@ -264,8 +263,7 @@
                         "ticks": false,
                         "domain": false,
                         "title": null,
-                        "labelFontSize": 28,
-                        "labelFont": "Garamond",
+                        "labelFontSize": 24,
                         "labelPadding": 20
                     },
                     "sort": {

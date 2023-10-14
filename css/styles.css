@@ -152,6 +152,26 @@ a {
     color: #333333;
 }
 
+.astrazeneca {
+    color: #c4a747;
+}
+
+.cansino {
+    color: #008080;
+}
+
+.pfizer {
+    color: #c3b1e1;
+}
+
+.sinopharm {
+    color: #8eadc5;
+}
+
+.sinovac {
+    color: #fd5da8;
+}
+
 @media screen and (min-width: 992px) {
     .state-text {
         margin: 0;
@@ -160,14 +180,6 @@ a {
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
     }
-}
-
-.vax-text {
-    margin: 0;
-    position: relative;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
 }
 
 .vega-bind {
@@ -240,6 +252,11 @@ canvas {
 
 #vaxStatus {
     height: 250px;
+    width: 100%;
+}
+
+#vaxBrands {
+    height: 500px;
     width: 100%;
 }
 
