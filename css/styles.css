@@ -188,10 +188,10 @@ a {
 
 .vega-bind-name {
     padding: 0px 10px;
-    text-align: right;
+    text-align: right !important;
     font-weight: bold;
     display: inline-block;
-    width: 150px !important;
+    width: 80px !important;
 }
 
 select {
