@@ -3,7 +3,7 @@
     "width": "container",
     "height": "container",
     "data": {
-        "url": "../data/deaths_malaysia_bid.csv"
+        "url": "https://raw.githubusercontent.com/ArthurLYR/COVID19-Malaysia/main/data/deaths_malaysia_bid.csv"
     },
     "mark": {
         "type": "arc",
