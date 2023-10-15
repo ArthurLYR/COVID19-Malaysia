@@ -53,6 +53,7 @@
                 "tickCount": 18,
                 "title": null,
                 "labelFontSize": 16,
+                "labelFontWeight": "bold",
                 "labelPadding": 10
             }
         },
@@ -63,7 +64,8 @@
                 "domain": false,
                 "ticks": false,
                 "title": null,
-                "labelFontSize": 24,
+                "labelFontSize": 22,
+                "labelFontWeight": "bold",
                 "labelPadding": 25
             }
         },

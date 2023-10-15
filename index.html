@@ -38,7 +38,7 @@
     <div class="container text-center">
 
         <!-- Case Proportions -->
-        <div class="row pb-5">
+        <div class="row pb-4">
             <div class="row">
                 <div class="col-lg-12">
                     <p>
@@ -54,12 +54,12 @@
                     </p>
                 </div>
             </div>
-            <div class="row py-3">
+            <div class="row pt-3">
                 <div class="col-lg-12">
                     <div id="totalCases"></div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row pt-3">
                 <div class="col-lg-4">
                     <div class="row text-start">
                         <div class="col-lg-12 pb-3">
@@ -87,6 +87,66 @@
                         </div>
                         <div class="col-lg-12">
                             <div id="deathsWaffle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-5 pb-3">
+                <div class="col-lg-6 pe-5">
+                    <div class="row text-start">
+                        <div class="col-lg-12">
+                            <div class="row text-start">
+                                <div class="col-lg-12 pb-3">
+                                    <p class="column-text">
+                                        How are the <strong class="active-case">total cases</strong> broken up by age group? 
+                                        The chart below breaks down the total cases per age group per 10,000 of its population.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="row text-start">
+                                <div class="col-9">
+                                    <div id="ageBreakdown"></div>
+                                </div>
+                                <div class="col-3">
+                                    <p class="age-annotation">
+                                        <strong class="active-case">Adults</strong> make up the most of all 
+                                        age groups at <br>
+                                        <strong class="active-case important-value">43%</strong>
+                                        of all cases
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 ps-5">
+                    <div class="row text-end">
+                        <div class="col-lg-12">
+                            <div class="row text-end">
+                                <div class="col-lg-12 pb-3">
+                                    <p class="column-text">
+                                        How many of the <strong class="death-case">total deaths</strong> were 
+                                        <strong class="death-case">Brought in Dead (BID)</strong>? 
+                                        The chart below breaks this down.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="row text-end">
+                                <div class="col-9">
+                                    <div id="deathBreakdown"></div>
+                                </div>
+                                <div class="col-3">
+                                    <p class="death-annotation">
+                                        <strong class="death-case">BID deaths</strong> make up 
+                                        <strong class="death-case important-value">21%</strong>
+                                        of all deaths
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

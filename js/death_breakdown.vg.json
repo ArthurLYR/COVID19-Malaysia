@@ -1,0 +1,46 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": "container",
+    "height": "container",
+    "data": {
+        "url": "../data/deaths_malaysia_bid.csv"
+    },
+    "mark": {
+        "type": "arc",
+        "innerRadius": 120
+    },
+    "encoding": {
+        "theta": {
+            "field": "count",
+            "type": "quantitative"
+        },
+        "color": {
+            "field": "death_type",
+            "type": "nominal",
+            "legend": null,
+            "scale": {
+                "domain": [
+                    "BID",
+                    "Non-BID"
+                ],
+                "range": [
+                    "#333333",
+                    "#cccccc"
+                ]
+            }
+        },
+        "tooltip": [
+            {
+                "field": "death_type",
+                "title": "Death Type",
+                "type": "nominal"
+            },
+            {
+                "field": "count",
+                "title": "Cases",
+                "type": "quantitative",
+                "format": ","
+            }
+        ]
+    }
+}

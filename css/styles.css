@@ -119,6 +119,32 @@ p {
     text-align: justify;
 }
 
+.column-text {
+    height: 82px !important;
+}
+
+.important-value {
+    font-size: 28px !important;
+}
+
+.age-annotation {
+    position: relative !important;
+    padding-top: 100px;
+    font-size: 14px !important;
+    text-align: left !important;
+    font-style: italic;
+    right: 30px !important;
+}
+
+.death-annotation {
+    position: relative !important;
+    padding-top: 15px;
+    font-size: 14px !important;
+    text-align: left !important;
+    font-style: italic;
+    right: 40px !important;
+}
+
 a {
     text-decoration: none !important;
     padding-bottom: 1px;
@@ -141,7 +167,7 @@ a {
 }
 
 .active-case {
-    color: #ff4528;
+    color: #fb6a4a;
 }
 
 .recovered-case {
@@ -239,6 +265,16 @@ canvas {
     height: 300px;
     width: 300px;
     text-align: right !important;
+}
+
+#ageBreakdown {
+    height: 350px;
+    width: 100%;
+}
+
+#deathBreakdown {
+    height: 350px;
+    width: 100%;
 }
 
 #casesOverTime {

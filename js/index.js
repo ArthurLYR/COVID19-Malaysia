@@ -20,6 +20,12 @@ let labels = [
     "New Cases",
     "Recovered Cases",
     "New Deaths",
+    "Age Group",
+    "Age Range",
+    "Cases (raw)",
+    "Cases (per 10,000 population)",
+    "Death Type",
+    "Cases",
     "State",
     "Population",
     "Active Cases (raw)",
@@ -77,6 +83,18 @@ vegaEmbed('#totalDeaths', totalDeaths, { tooltip: tooltipOptions, "actions": fal
 // Deaths Waffle Chart
 var deathsWaffle = "./js/deaths_waffle.vg.json";
 vegaEmbed('#deathsWaffle', deathsWaffle, { tooltip: tooltipOptions, "actions": false }).then(function (result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+}).catch(console.error);
+
+// Case Age Breakdown
+var ageBreakdown = "./js/age_breakdown.vg.json";
+vegaEmbed('#ageBreakdown', ageBreakdown, { tooltip: tooltipOptions, "actions": false }).then(function (result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+}).catch(console.error);
+
+// Death BID Breakdown
+var deathBreakdown = "./js/death_breakdown.vg.json";
+vegaEmbed('#deathBreakdown', deathBreakdown, { tooltip: tooltipOptions, "actions": false }).then(function (result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
 }).catch(console.error);
 

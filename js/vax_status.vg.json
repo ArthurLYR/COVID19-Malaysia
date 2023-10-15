@@ -263,7 +263,8 @@
                         "ticks": false,
                         "domain": false,
                         "title": null,
-                        "labelFontSize": 24,
+                        "labelFontSize": 22,
+                        "labelFontWeight": "bold",
                         "labelPadding": 20
                     },
                     "sort": {

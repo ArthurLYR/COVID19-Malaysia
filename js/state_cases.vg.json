@@ -148,8 +148,8 @@
             },
             "mark": {
                 "type": "geoshape",
-                "fill": "lightblue",
-                "stroke": "lightblue",
+                "fill": "#B6D7E4",
+                "stroke": "#B6D7E4",
                 "strokeWidth": 1
             }
         },

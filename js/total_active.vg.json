@@ -4,7 +4,7 @@
     "width": "container",
     "title": {
         "text": "Active",
-        "color": "#ff4528"
+        "color": "#fb6a4a"
     },
     "data": {
         "url": "https://raw.githubusercontent.com/ArthurLYR/COVID19-Malaysia/main/data/cases_proportion.csv"
@@ -27,7 +27,7 @@
     "mark": {
         "type": "text",
         "fontSize": 40,
-        "color": "#ff4528"
+        "color": "#fb6a4a"
     },
     "encoding": {
         "text": {

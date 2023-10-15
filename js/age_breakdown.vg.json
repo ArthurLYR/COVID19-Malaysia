@@ -1,0 +1,92 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": "container",
+    "height": "container",
+    "data": {
+        "url": "../data/cases_malaysia_age.csv"
+    },
+    "layer": [
+        {
+            "mark": {
+                "type": "arc",
+                "innerRadius": 20,
+                "stroke": "#ffffff"
+            }
+        }
+    ],
+    "encoding": {
+        "theta": {
+            "field": "count_10000",
+            "type": "quantitative",
+            "stack": true
+        },
+        "radius": {
+            "field": "count_10000",
+            "scale": {
+                "type": "linear",
+                "zero": true,
+                "rangeMin": 20
+            }
+        },
+        "color": {
+            "field": "age_group",
+            "type": "nominal",
+            "legend": null,
+            "scale": {
+                "domain": [
+                    "Adolescent",
+                    "Adult",
+                    "Elder"
+                ],
+                "range": [
+                    "#cccccc",
+                    "#fb6a4a",
+                    "#cccccc"
+                ]
+            }
+        },
+        "order": {
+            "field": "count_10000",
+            "type": "quantitative",
+            "sort": "descending"
+        },
+        "tooltip": [
+            {
+                "field": "age_group",
+                "title": "Age Group",
+                "type": "nominal"
+            },
+            {
+                "field": "age_range",
+                "title": "Age Range",
+                "type": "nominal"  
+            },
+            {
+                "field": "pop",
+                "title": "Population",
+                "type": "nominal",
+                "format": ","
+            },
+            {
+                "field": "count",
+                "title": "Cases (raw)",
+                "type": "nominal",
+                "format": ","
+            },
+            {
+                "field": "count_10000",
+                "title": "Cases (per 10,000 population)",
+                "type": "nominal",
+                "format": ".2f"
+            }
+        ]
+    },
+    "config": {
+        "background": "transparent",
+        "font": "Open Sans",
+        "view": {
+            "stroke": null
+        },
+        "customFormatTypes": true
+    }
+}
