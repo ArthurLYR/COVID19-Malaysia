@@ -52,6 +52,7 @@
                 "ticks": false,
                 "tickCount": 18,
                 "title": null,
+                "labelFont": "Open Sans",
                 "labelFontSize": 16,
                 "labelFontWeight": "bold",
                 "labelPadding": 10
@@ -64,6 +65,7 @@
                 "domain": false,
                 "ticks": false,
                 "title": null,
+                "labelFont": "Open Sans",
                 "labelFontSize": 22,
                 "labelFontWeight": "bold",
                 "labelPadding": 25
